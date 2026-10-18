@@ -1,5 +1,7 @@
 # NCII Shield
 
+**Live in-browser demo:** https://shrestha-droid.github.io/ncii-shield/ (`demo/index.html`, no backend: the dHash worker, BK-tree, simulated ingest and consent-gated notice drafting run in the tab, and nothing is sent anywhere).
+
     cd backend && python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
     .venv/bin/uvicorn app:app        # API :8000
     .venv/bin/python worker.py       # simulated ingest + matcher + dry-run notice dispatch
